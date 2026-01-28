@@ -100,23 +100,27 @@
     .a4{ height:260mm; break-inside: avoid; page-break-inside: avoid; }
 
     /* Ensure full-page drawing areas never split across pages */
-    .fullpage{ break-before: page; page-break-before: always; }
+    .fullpage{
+      break-before: page;
+      page-break-before: always;
+      break-after: page;
+      page-break-after: always;
+    }
 
     @media print{
-      .fullpage{ break-before: page; page-break-before: always; }
+      header{ display:none; }
+      body{ background:#fff; }
+      .wrap{ padding:0; }
+      /* keep consistent margins like the PAT */
+      .page{ box-shadow:none; border:none; width:auto; min-height:auto; padding:var(--pad); }
+
+      .fullpage{
+        break-before: page;
+        page-break-before: always;
+        break-after: page;
+        page-break-after: always;
+      }
       .a4{ break-inside: avoid; page-break-inside: avoid; }
-      header{ display:none; }
-      body{ background:#fff; }
-      .wrap{ padding:0; }
-      .page{ box-shadow:none; border:none; width:auto; min-height:auto; padding:0; }
-    }
-    }
-
-    @media print{
-      header{ display:none; }
-      body{ background:#fff; }
-      .wrap{ padding:0; }
-      .page{ box-shadow:none; border:none; width:auto; min-height:auto; padding:0; }
     }
   </style>
 </head>
@@ -378,7 +382,7 @@
   .q,.p,ul{ font-size:12px; line-height:1.45; }
   .figure{ border:1px solid #d9d9d9; padding:10px; }
   .a4{ height:260mm; page-break-inside: avoid; }
-  .fullpage{ page-break-before: always; }
+  .fullpage{ page-break-before: always; page-break-after: always; }
 </style>
 </head>
 <body>
