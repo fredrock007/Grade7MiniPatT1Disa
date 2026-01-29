@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body{ font-family: Arial, Helvetica, sans-serif; color:#111; }
+  .h1{ text-align:center; font-size:18px; font-weight:800; margin:0 0 6px; }
+  .h2{ text-align:center; font-size:14px; font-weight:800; margin:0 0 14px; text-transform:uppercase; }
+  table{ border-collapse:collapse; width:100%; }
+  .meta td{ border:1px solid #d9d9d9; padding:8px; font-size:12px; }
+  .rubric th,.rubric td{ border:1px solid #d9d9d9; padding:8px; font-size:12px; }
+  .rubric th{ background:#f7f7f7; }
+  .section{ margin-top:14px; padding-top:10px; border-top:2px solid #111; }
+  .q,.p,ul{ font-size:12px; line-height:1.45; }
+  .figure{ border:1px solid #d9d9d9; padding:10px; }
+  .a4{ height:260mm; page-break-inside: avoid; }
+  .fullpage{ page-break-before: always; }
+</style>
+</head>
+<body>
+
+      <div class="h1">TECHNOLOGY</div>
+      <div class="h2">Grade 7 • Term 1 • 2026</div>
+
+      <table class="meta">
+        <tbody><tr>
+          <td class="label">Name</td>
+          <td>________________________</td>
+          <td class="label">Date</td>
+          <td>________________________</td>
+        </tr>
+        <tr>
+          <td class="label">Teacher</td>
+          <td>Mr Samuels</td>
+          <td class="label">Moderator</td>
+          <td>Mrs Rosslee</td>
+        </tr>
+        <tr>
+          <td class="label">Time</td>
+          <td>4 hours</td>
+          <td class="label">Pages</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td class="label">Total</td>
+          <td>_________ / 70</td>
+          <td class="label">Percentage / NRC</td>
+          <td>________ % &nbsp;&nbsp; | &nbsp;&nbsp; _________</td>
+        </tr>
+      </tbody></table>
+
+      <div class="section">
+        <h3>PAT 1: Mini-practical assessment task - Mechanical systems and control</h3>
+        <div class="p"><b>Skill assessed:</b></div>
+        <div class="p">Learners develop a working model of a hydraulic-syringe powered, linked-lever Security Gate using simple materials.</div>
+
+        <div class="p"><b>Scenario:</b></div>
+        <div class="p">Disa Primary School is upgrading its entrance to improve learner safety and access control. Currently, the school gate is manually opened, which causes delays and safety risks during busy drop-off and collection times.</div>
+        <div class="p">The school would like to install a low-cost automatic gate system that uses a hydraulic mechanism to open and close smoothly. The system must be safe, reliable, and easy to operate, even during load shedding. A manual override must be included so the gate can still work when there is no electricity.</div>
+
+        <div class="p"><b>The design must:</b></div>
+        <ul>
+          <li>Open and close smoothly</li>
+          <li>Include a visible safety feature (colour marking or symbol)</li>
+          <li>Stop or slow when an obstruction is detected</li>
+          <li>Include a manual backup system</li>
+          <li>Be suitable for frequent daily use</li>
+        </ul>
+
+        <div class="p"><b>Model Requirements:</b></div>
+        <ul>
+          <li>Base: 40 cm × 20 cm</li>
+          <li>Gate: ±15 cm high and ±30 cm wide</li>
+          <li>Materials: Cardboard, plastic sheets, wooden sticks, syringes, tubing, rubber bands</li>
+          <li>Budget: Maximum R150</li>
+        </ul>
+
+        <div class="p">The gate must include levers or linkages to improve movement and control. The model must clearly show how a learner would safely operate it.</div>
+      </div>
+
+      <div class="section">
+        <h3>INVESTIGATE [15]</h3>
+
+        <div class="q"><b>Investigation:</b> (7)</div>
+
+        <div class="q">True or false: Syringes can be used to make things move. <span class="dots"></span> (1)</div>
+
+        <div class="grid-2">
+          <div>
+            <div class="q"><b>Label the syringe below:</b> (1)</div>
+            <div class="figure">
+              <svg viewBox="0 0 520 180" width="100%" height="180" role="img" aria-label="Syringe diagram">
+                <defs>
+                  <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+                    <path d="M 0 0 L 10 5 L 0 10 z" fill="#111"></path>
+                  </marker>
+                </defs>
+
+                <!-- Syringe body -->
+                <rect x="10" y="70" width="360" height="40" rx="8" ry="8" fill="none" stroke="#111" stroke-width="3"></rect>
+                <rect x="60" y="60" width="220" height="60" rx="6" ry="6" fill="none" stroke="#111" stroke-width="2"></rect>
+                <line x1="90" y1="60" x2="90" y2="120" stroke="#111" stroke-width="2"></line>
+                <line x1="120" y1="60" x2="120" y2="120" stroke="#111" stroke-width="2"></line>
+                <line x1="150" y1="60" x2="150" y2="120" stroke="#111" stroke-width="2"></line>
+                <line x1="180" y1="60" x2="180" y2="120" stroke="#111" stroke-width="2"></line>
+                <line x1="210" y1="60" x2="210" y2="120" stroke="#111" stroke-width="2"></line>
+                <line x1="240" y1="60" x2="240" y2="120" stroke="#111" stroke-width="2"></line>
+
+                <!-- Nozzle -->
+                <rect x="360" y="82" width="110" height="16" rx="6" ry="6" fill="none" stroke="#111" stroke-width="3"></rect>
+                <polygon points="470,90 505,80 505,100" fill="none" stroke="#111" stroke-width="3"></polygon>
+
+                <!-- Plunger handle -->
+                <rect x="20" y="58" width="18" height="64" rx="6" ry="6" fill="none" stroke="#111" stroke-width="3"></rect>
+                <rect x="0" y="52" width="18" height="76" rx="6" ry="6" fill="none" stroke="#111" stroke-width="3"></rect>
+
+                <!-- Arrow to PLUNGER -->
+                <line x1="9" y1="6" x2="9" y2="52" stroke="#111" stroke-width="2" marker-end="url(#arrow)"></line>
+
+                <!-- Arrow to CYLINDER / BARREL -->
+                <line x1="170" y1="6" x2="170" y2="60" stroke="#111" stroke-width="2" marker-end="url(#arrow)"></line>
+              </svg>
+              <div class="figcap">Label the two parts indicated by the arrows.</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="q"><b>What is the difference between a pneumatic and hydraulic mechanism?</b> (2)</div>
+            <div class="answer-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+
+            <div class="q"><b>Instead of water what type of liquid is usually used in a hydraulic system?</b> (1)</div>
+            <div class="answer-lines"><div class="line"></div><div class="line"></div></div>
+
+            <div class="q"><b>State TWO advantages of using a hydraulic system in machines such as car jacks or lifts.</b> (2)</div>
+            <div class="answer-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+          </div>
+        </div>
+
+        <div class="q"><b>2. Complete the Design Brief, Specifications and Constraints</b> (8) <span class="small">*Read the scenario to find the answers.</span></div>
+
+        <div class="q"><b>Write a design brief</b> (3)</div>
+        <div class="p small">What is needed? Who will use it? What is it for?</div>
+        <div class="answer-lines">
+          <div class="p">Design a ____________________________ (what is needed?) for the ____________________________ (who will use it?) that will be used to ____________________________ (what is it for?).</div>
+        </div>
+
+        <div class="q"><b>List 3 specifications.</b> (3)</div>
+        <div class="answer-lines"><div class="line"></div><div class="line"></div><div class="line"></div></div>
+
+        <div class="q"><b>List 2 constraints / limitations on the materials.</b> (2)</div>
+        <div class="answer-lines"><div class="line"></div><div class="line"></div></div>
+
+        <div class="q"><b>Initial idea sketches</b></div>
+        <div class="p small">Create freehand drawings and focus on the concepts. Make use of the different line types. Focus on simple shapes and write notes next to the sketches to explain your idea.</div>
+        <div class="figure" style="height:260mm; background:#fafafa;">
+          <div style="height:100%; border:1px dashed #e2e2e2; border-radius:8px; background:repeating-linear-gradient(0deg, transparent, transparent 22px, rgba(0,0,0,.04) 23px);"></div>
+          <div class="figcap">Sketch space (A4-size)</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>DESIGN [20]</h3>
+
+        <div class="q"><b>Draw one view of the 2D working drawing with dimensions</b> (8)</div>
+        <div class="p small">Draw ONE 2D working drawing of your security gate in the space provided. Use a ruler and a pencil only. Measure any 2 sides and draw in the dimension lines with the measurement indicated (only 2). Give it a heading. <b>This drawing must be done on graph/grid paper.</b></div>
+
+        <div class="figure graph-paper a4 fullpage"></div>
+
+        <table class="rubric">
+          <tbody><tr><th>Assessment rubric for the working drawing</th><th>2</th><th>1</th><th>0</th></tr>
+          <tr><td>Wrote a heading</td><td></td><td></td><td></td></tr>
+          <tr><td>Copied the drawing correctly</td><td></td><td></td><td></td></tr>
+          <tr><td>2 Dimensions done neatly and correctly</td><td></td><td></td><td></td></tr>
+          <tr><td>Line quality (Dark outlines, light dimension lines)</td><td></td><td></td><td></td></tr>
+          <tr><td><b>Total</b></td><td colspan="3"><b>/8</b></td></tr>
+        </tbody></table>
+
+        <div class="q" style="margin-top:14px;"><b>Draw a 3D oblique projection</b> (12)</div>
+        <div class="p small">Draw the oblique (3D) view of your security gate in the space provided. Project the depth lines at 45°. Use a pencil and ruler. Depth = 1 block. <b>This drawing must be done on graph/grid paper.</b></div>
+
+        <div class="figure graph-paper a4 fullpage"></div>
+
+        <table class="rubric">
+          <tbody><tr><th>Assessment rubric for the oblique drawing</th><th>4</th><th>3</th><th>2</th><th>1</th></tr>
+          <tr><td>Projected all the corners backward at 45°</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>The rear lines were drawn in correctly</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Used dark accurate outlines</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td><b>Total</b></td><td colspan="4"><b>/12</b></td></tr>
+        </tbody></table>
+      </div>
+
+      <div class="section">
+        <h3>MAKE [35]</h3>
+
+        <div class="q"><b>Planning how you will make your model</b> (15)</div>
+
+        <div class="q"><b>3.1 Materials list</b> (4)</div>
+        <div class="answer-lines"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+
+        <div class="q"><b>3.2 Tools list</b> (4)</div>
+        <div class="answer-lines"><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div></div>
+
+        <div class="q"><b>3.3 Two safety rules</b> (2)</div>
+        <div class="answer-lines"><div class="line"></div><div class="line"></div></div>
+
+        <div class="q"><b>3.4 Order of work (Flowchart)</b> (5)</div>
+        <div class="figure a4 fullpage" style="background:#fff;">
+          <div style="height:100%; border:1px dashed #e2e2e2; border-radius:8px;"></div>
+          <div class="figcap">Flowchart space (A4-size)</div>
+        </div>
+
+        <div class="q" style="margin-top:14px;"><b>Learners develop a working model</b></div>
+        <div class="p small">Making rubric: Rescue system</div>
+
+        <table class="rubric">
+          <tbody><tr><th>Criteria</th><th>Good (3)</th><th>Fair (2)</th><th>Elementary (1)</th><th>Not done (0)</th></tr>
+          <tr><td>You followed the plans and instructions successfully.</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>The model was made in-class and all members participated.</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Tools were used correctly and safely.</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>The hydraulics system used for movement is working effectively.</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>The model fit the design criteria.</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Your model is stable. At least one strengthening technique was used</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td><b>Effective (2) / Not effective (0):</b> Your model works well.</td><td colspan="4"></td></tr>
+          <tr><td><b>Total</b></td><td colspan="4"><b>/20</b></td></tr>
+        </tbody></table>
+      </div>
+    
+</body>
+</html>
