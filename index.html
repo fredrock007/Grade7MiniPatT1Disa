@@ -47,6 +47,17 @@
       font-size:13px;
     }
     button.secondary{ background:#fff; color:#111; }
+    a.dl{
+      display:inline-block;
+      border:1px solid var(--line);
+      background:#111;
+      color:#fff;
+      padding:10px 12px;
+      border-radius:10px;
+      font-weight:700;
+      text-decoration:none;
+      font-size:13px;
+    }
     .wrap{ padding:18px; display:flex; justify-content:center; }
     .page{
       width:var(--page-w);
@@ -148,7 +159,7 @@
     </div>
     <div class="actions">
       <button class="secondary" onclick="window.print()">Print</button>
-      <button onclick="downloadDoc()">Download .doc</button>
+      <a class="dl" href="Technology_PAT_2026.docx" download>Download .docx</a>
     </div>
   </header>
 
@@ -363,82 +374,9 @@
   </div>
 
   <script>
-    function downloadDoc(){
-      // Export as "Word HTML" that Word Desktop reliably opens as a formatted document.
-      // Key points:
-      // - No <!doctype> in the exported file
-      // - Office/Word namespaces + MSO conditional XML
-      // - UTF-8 BOM to help Word detect encoding
-      const content = document.getElementById("pat").innerHTML;
-
-      const wordHtml = `
-<html xmlns:o="urn:schemas-microsoft-com:office:office"
-      xmlns:w="urn:schemas-microsoft-com:office:word"
-      xmlns="http://www.w3.org/TR/REC-html40">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!--[if gte mso 9]>
-<xml>
-  <w:WordDocument>
-    <w:View>Print</w:View>
-    <w:Zoom>100</w:Zoom>
-    <w:DoNotOptimizeForBrowser/>
-  </w:WordDocument>
-</xml>
-<![endif]-->
-<style>
-  @page Section1 { size: 210mm 297mm; margin: 16mm; }
-  div.Section1 { page: Section1; }
-
-  body{ font-family: Arial, Helvetica, sans-serif; color:#111; }
-  .h1{ text-align:center; font-size:18px; font-weight:800; letter-spacing:.3px; margin:0 0 6px; }
-  .h2{ text-align:center; font-size:14px; font-weight:800; margin:0 0 14px; text-transform:uppercase; }
-
-  table{ border-collapse:collapse; width:100%; }
-  .meta td{ border:1px solid #d9d9d9; padding:8px; vertical-align:top; font-size:12px; }
-  .meta .label{ color:#666; width:22%; }
-
-  .section{ margin-top:14px; padding-top:10px; border-top:2px solid #111; }
-  .section h3{ margin:0 0 8px; font-size:13px; letter-spacing:.2px; }
-
-  .p{ font-size:12px; line-height:1.45; margin:0 0 8px; }
-  .q{ margin:10px 0; font-size:12px; line-height:1.45; }
-  ul{ margin:6px 0 10px 18px; font-size:12px; line-height:1.4; }
-  .small{ font-size:11px; color:#666; }
-
-  .answer-lines{ border:1px solid #d9d9d9; padding:10px; border-radius:10px; background:#fafafa; margin-top:6px; }
-  .line{ height:14px; border-bottom:1px dotted #bbb; margin:8px 0; }
-
-  .figure{ border:1px solid #d9d9d9; padding:10px; background:#fff; border-radius:0; }
-  .figcap{ font-size:11px; color:#666; margin-top:6px; }
-
-  .rubric{ width:100%; border-collapse:collapse; font-size:12px; margin-top:8px; }
-  .rubric th,.rubric td{ border:1px solid #d9d9d9; padding:8px; text-align:left; vertical-align:top; }
-  .rubric th{ background:#f7f7f7; }
-
-  /* Page control */
-  .a4{ height:260mm; page-break-inside:avoid; }
-  .fullpage{ page-break-before:always; page-break-after:always; }
-
-  /* NOTE: Word may not render CSS background gradients (graph paper) reliably. Layout remains correct. */
-</style>
-</head>
-<body>
-  <div class="Section1">
-    ${content}
-  </div>
-</body>
-</html>`.trim();
-
-      const blob = new Blob(["﻿" + wordHtml], { type: "application/msword" });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = "Technology_PAT_2026.doc";
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(() => URL.revokeObjectURL(a.href), 800);
-    }
+    // IMPORTANT: Word Desktop will NOT reliably render complex CSS/HTML when exported as a .doc.
+    // To get an exact match to this preview, host a real .DOCX file in the same GitHub folder
+    // (e.g. Technology_PAT_2026.docx) and download it directly.
   </script>
 </body>
 </html>
